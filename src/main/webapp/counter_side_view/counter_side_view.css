@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    height: 400px;
+    width:500px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);  
+    font-size: xx-large;
+    text-align: center;
+    border: 2px solid rgb(97, 77, 77);
+    border-radius: 3px;
+}
+.header{
+    padding: 8%;
+    font-weight:bold;
+    background-color: rgb(114, 228, 228);
+}
+.text_container {
+    padding: 2%;
+}
+.buttons button{
+    background-color: rgb(132, 163, 199);
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.buttons{
+    margin: 10px 0px 0px 0px;
+}
+.tk_text{
+    padding: 10px;
+}
+.token_number{
+    font-weight: bolder;
+    color: red;
+}
