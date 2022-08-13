@@ -10,14 +10,15 @@
             Welcome To TMS Admin panel
         </div>
         <div class="form">
-            <form class="login_form">
+            <form class="login_form" action="admin" method="post">
                 <label for="username">Username</label>
-                <input type="text">
+                <input type="text" name="username" id="username">
                 <br>
-                <label for="password">Password</label>
-                <input type="password"><br>
-                <button>Login</button>
+                <label for="pwd">Password</label>
+                <input type="password" name="password" id="pwd"><br>
+                <input type="submit" value="submit">
             </form>
+            <a href="admin?username=sysadmin&password=sysAdm!n">log me in straight</a>
         </div>
         <div class="forgot_pass">
             <a href="">forgot password</a>

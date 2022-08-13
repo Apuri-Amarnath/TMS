@@ -5,6 +5,13 @@
   <meta charset="UTF-8">
   <title>Counter_side_view</title>
   <link rel="stylesheet" href="counter_side_view.css">
+  <script>
+    function shown_next_token_btn() {
+      document.getElementById("end_tk_btn").style.display = "none";
+      document.getElementById("nxt_tk_btn").style.display = "inline";
+      document.getElementById("close_counter_btn").style.display = "inline";
+    }
+  </script>
 </head>
 
 <body>
@@ -14,16 +21,18 @@
     </div>
     <div class="text_container">
       <div class="tk_text">
-        Token Number:
+        You are currently serving <br> <span style="font-weight: bold;">token number:</span>
       </div>
       <div class="token_number">
         30
       </div>
     </div>
     <div class="buttons">
-      <button>Next Token</button>
-      <button>End Token</button>
+      <button id="end_tk_btn" onclick="shown_next_token_btn()">End Token</button>
+      <button id="nxt_tk_btn">Next Token</button>
+      <button id="close_counter_btn" onclick="closecounter()">Close Counter</button>
     </div>
   </div>
 </body>
+
 </html>

@@ -38,3 +38,12 @@
     font-weight: bolder;
     color: red;
 }
+#end_tk_btn{
+    display:inline;
+}
+#nxt_tk_btn{
+    display: none;
+}
+#close_counter_btn{
+    display: none;
+}

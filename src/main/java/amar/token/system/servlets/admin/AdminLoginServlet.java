@@ -1,4 +1,4 @@
-package amar.token.sytem.servlets.admin;
+package amar.token.system.servlets.admin;
 
 import jakarta.servlet.Servlet;
 import jakarta.servlet.ServletConfig;
@@ -27,7 +27,7 @@ public class AdminLoginServlet implements Servlet {
         pw.println("<html><body>");
         String usernamePostedByTheBrowser = servletRequest.getParameter("username");
         String pwdPostedByTheBrowser = servletRequest.getParameter("password");
-        if (usernamePostedByTheBrowser.equals(ADMIN_USER_NAME) && ADMIN_USER_PWD.equals(pwdPostedByTheBrowser)) {
+        if (ADMIN_USER_NAME.equals(usernamePostedByTheBrowser) && ADMIN_USER_PWD.equals(pwdPostedByTheBrowser)) {
             pw.println("Welcome to servlet");
         } else {
             pw.println("Neevu awaru?");

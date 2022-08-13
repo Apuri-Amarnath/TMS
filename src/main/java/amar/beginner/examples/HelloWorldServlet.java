@@ -1,4 +1,4 @@
-package amar.beginner.servlets;
+package amar.beginner.examples;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
